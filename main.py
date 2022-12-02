@@ -32,7 +32,7 @@ def start_listeners(idle_listener: Thread, keyboard_listener: 'KeyboardListener'
     """
 
     idle_listener.start()
-    # keyboard_listener.start()
+    keyboard_listener.start()
     mouse_listener.start()
 
 
@@ -45,7 +45,7 @@ def join_listeners(idle_listener: Thread, keyboard_listener: 'KeyboardListener',
         mouse_listener (MouseListener): _description_
     """
     # idle_listener.join()
-    # keyboard_listener.join()
+    keyboard_listener.join()
     mouse_listener.join()
 
 
