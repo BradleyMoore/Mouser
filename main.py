@@ -98,11 +98,11 @@ def idle_process() -> None:
     screen_width = get_screen_width()
 
     while True:
-        sleep(1)
+        sleep(15)
 
         now = datetime.now()
         durration = now - last_action_time
-        idle_seconds = 1.
+        idle_seconds = 30.
 
         if durration.total_seconds() > idle_seconds:
             make_move(mouse, screen_width)
